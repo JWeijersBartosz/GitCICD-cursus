@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="4" time="0.085" timestamp="2024-01-22T14:57:40.031977" hostname="GEBRUIK-KQN6463"><testcase classname="account_tests" name="test_deposit_checking" time="0.002" /><testcase classname="account_tests" name="test_withdraw_checking" time="0.001" /><testcase classname="account_tests" name="test_overdraw_checking" time="0.000" /><testcase classname="account_tests" name="test_overdraw_savings" time="0.001"><failure message="assert 0 == 50&#10; +  where 0 = &lt;account_tests.Account object at 0x000001C1224D0FE0&gt;.balance">def test_overdraw_savings():
+        account = Account('savings')
+        account.deposit(100)
+        account.withdraw(100)
+&gt;       assert account.balance == 50
+E       assert 0 == 50
+E        +  where 0 = &lt;account_tests.Account object at 0x000001C1224D0FE0&gt;.balance
+
+account_tests.py:44: AssertionError</failure></testcase></testsuite></testsuites>
